@@ -22,17 +22,27 @@ html {
 .navigation {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   background-color: #6E845F;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-height: 50%;
+  min-height: 10%;
+}
+
+@media (max-width: 766px) {
+  .navigation .navigation__linkLogo {
+    align-self: flex-end;
+  }
 }
 
 .navigation .linkLogo__logo {
   height: 8rem;
   max-width: 100%;
   object-fit: scale-down;
+}
+.navigation .linkLogo__logo:hover {
+  transition: 1.5s;
+  transform: rotate(360deg);
 }
 @media (min-width: 768px) {
   .navigation .linkLogo__logo {
@@ -63,10 +73,12 @@ html {
 }
 
 .navigation .navigation__responsiveIcon {
+  position: relative;
+  top: -6rem;
   cursor: pointer;
   float: right;
   padding: 28px 20px;
-  position: relative;
+  width: fit-content;
   user-select: none;
 }
 
@@ -150,6 +162,10 @@ html {
 }
 
 @media screen and (min-width: 768px) {
+  .navigation {
+    align-items: center;
+  }
+
   .navigation .navigation__responsiveIcon {
     display: none;
   }
@@ -171,13 +187,14 @@ html {
 }
 @media screen and (min-width: 960px) {
   .navigation {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-around;
     height: 12rem;
   }
 
   .navigation .navigation__linkLogo {
+    text-align: center;
     width: 25%;
   }
 
@@ -189,7 +206,7 @@ html {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-right: 21%;
+    margin-left: 12%;
   }
 
   .navigation .navigation__list .list__element {
@@ -227,7 +244,7 @@ html {
 }
 @media (max-width: 767px) {
   .sobreIvore .cuerpo .titulo {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 }
 
@@ -240,7 +257,7 @@ html {
 }
 @media (max-width: 767px) {
   .sobreIvore .cuerpo .parrafo {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -279,6 +296,13 @@ html {
   font-size: 1.5vw;
   align-self: center;
   color: #666666;
+}
+@media (max-width: 767px) {
+  .sobreIvore .cuerpo .imgtxt h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1rem;
+  }
 }
 
 @font-face {
@@ -395,7 +419,7 @@ html {
   .mainIndex .texto h1 {
     font-family: Buffalo;
     color: #C47B6A;
-    font-size: 6.5vw;
+    font-size: 10vw;
     text-align: center;
     margin-top: 6vw;
   }
@@ -404,7 +428,7 @@ html {
     font-family: SFPro;
     margin-top: 2.5vw;
     color: #666666;
-    font-size: 2.3vw;
+    font-size: 4vw;
     text-align: justify;
   }
 
@@ -416,7 +440,7 @@ html {
     font-family: Buffalo;
     margin-top: 5vw;
     color: #6E845F;
-    font-size: 4.2vw;
+    font-size: 6.2vw;
     text-align: justify;
   }
 }
