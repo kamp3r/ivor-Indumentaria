@@ -30,20 +30,20 @@ html {
 }
 @media (max-width: 766px) {
   .navigation {
-    margin-top: -5rem;
+    margin-top: -5.5rem;
   }
 }
 
 @media (max-width: 766px) {
   .navigation .navigation__linkLogo {
     position: relative;
-    bottom: -5rem;
+    bottom: -5.5rem;
     align-self: flex-end;
   }
 }
 
 .navigation .linkLogo__logo {
-  height: 8rem;
+  height: 5rem;
   max-width: 100%;
   object-fit: scale-down;
 }
@@ -81,7 +81,6 @@ html {
 
 .navigation .navigation__responsiveIcon {
   position: relative;
-  top: -2rem;
   cursor: pointer;
   float: right;
   padding: 28px 20px;
