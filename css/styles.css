@@ -30,9 +30,14 @@ html {
 }
 
 .navigation .linkLogo__logo {
-  height: 12rem;
-  max-width: 100%;
-  object-fit: scale-down;
+  height: 8rem;
+}
+@media (min-width: 768px) {
+  .navigation .linkLogo__logo {
+    height: 12rem;
+    max-width: 100%;
+    object-fit: scale-down;
+  }
 }
 
 .navigation #botonMenu {
@@ -201,6 +206,11 @@ html {
   background: url("../src/images/Fondo.png");
   padding: 4vw;
 }
+@media (max-width: 767px) {
+  .sobreIvore {
+    padding: 0.1rem;
+  }
+}
 
 .sobreIvore .cuerpo {
   width: 85%;
@@ -215,6 +225,11 @@ html {
   font-family: Buffalo;
   font-size: 6vw;
 }
+@media (max-width: 767px) {
+  .sobreIvore .cuerpo .titulo {
+    font-size: 8rem;
+  }
+}
 
 .sobreIvore .cuerpo .parrafo {
   font-family: SFPro;
@@ -222,6 +237,11 @@ html {
   font-size: 1.5vw;
   text-align: justify;
   margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .sobreIvore .cuerpo .parrafo {
+    font-size: 2rem;
+  }
 }
 
 .sobreIvore .cuerpo .parrafo .verde {
