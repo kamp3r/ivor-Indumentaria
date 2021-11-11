@@ -1,6 +1,7 @@
 $('#send').on('click', (e) =>{
     e.preventDefault();
     enviarMail();
+    $('#formContact').trigger("reset")
 });
 
 function enviarMail(){
