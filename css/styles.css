@@ -1,10 +1,18 @@
 @font-face {
   font-family: "buffalo";
-  src: url(../src/typo/Buffalo.otf) format("opentype");
+  src: url(../src/typo/Buffalo.OTF) format("opentype");
 }
 @font-face {
   font-family: "sfprodisplay";
-  src: url(../src/typo/SFPRODISPLAYREGULAR.otf) format("opentype");
+  src: url(../src/typo/SFPRODISPLAYREGULAR.OTF) format("opentype");
+}
+@font-face {
+  font-family: "SFPro";
+  src: url(../src/typo/SFProMedium.OTF) format("opentype");
+}
+@font-face {
+  font-family: "SFProB";
+  src: url(../src/typo/SFPRODISPLAYBOLD.OTF) format("opentype");
 }
 html {
   font-size: 62.5%;
@@ -224,6 +232,10 @@ html {
     font-size: 2rem;
   }
 }
+.verde {
+  color: #6E845F;
+}
+
 .sobreIvore {
   width: 100%;
   background: url("../src/images/Fondo.png");
@@ -245,7 +257,7 @@ html {
   margin-top: 30px;
   text-align: center;
   color: #C47B6A;
-  font-family: Buffalo;
+  font-family: buffalo;
   font-size: 6vw;
 }
 @media (max-width: 767px) {
@@ -255,7 +267,7 @@ html {
 }
 
 .sobreIvore .cuerpo .parrafo {
-  font-family: SFPro;
+  font-family: sfprodisplay;
   color: #666666;
   font-size: 1.5vw;
   text-align: justify;
@@ -298,7 +310,8 @@ html {
 
 .sobreIvore .cuerpo .imgtxt h3 {
   width: 50%;
-  font-family: SFPro-M;
+  font-family: sfprodisplay;
+  font-weight: 700;
   font-size: 1.5vw;
   align-self: center;
   color: #666666;
@@ -311,18 +324,6 @@ html {
   }
 }
 
-@font-face {
-  font-family: Buffalo;
-  src: url(../src/typo/Buffalo.otf);
-}
-@font-face {
-  font-family: SFPro;
-  src: url(../src/typo/SFProMedium.OTF);
-}
-@font-face {
-  font-family: SFProB;
-  src: url(../src/typo/SFPRODISPLAYBOLD.OTF);
-}
 #carouselExampleIndicators {
   width: 100%;
 }
@@ -336,7 +337,6 @@ html {
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img {
-  height: fit-content;
   width: 100%;
 }
 
@@ -368,14 +368,14 @@ html {
   }
 
   .mainIndex .texto h1 {
-    font-family: Buffalo;
+    font-family: buffalo;
     color: #C47B6A;
     font-size: 4vw;
     padding-top: 30px;
   }
 
   .mainIndex .texto .txt1 {
-    font-family: SFPro;
+    font-family: sfprodisplay;
     margin-top: 2vw;
     color: #666666;
     font-size: 1.5vw;
@@ -383,7 +383,7 @@ html {
   }
 
   .mainIndex .texto .txt1 span {
-    font-family: SFProB !important;
+    font-family: sfprodisplay !important;
   }
 
   .mainIndex .texto .txt2 {
@@ -431,7 +431,7 @@ html {
   }
 
   .mainIndex .texto .txt1 {
-    font-family: SFPro;
+    font-family: sfprodisplay;
     margin-top: 2.5vw;
     color: #666666;
     font-size: 4vw;
@@ -443,7 +443,7 @@ html {
   }
 
   .mainIndex .texto .txt2 {
-    font-family: Buffalo;
+    font-family: buffalo;
     margin-top: 5vw;
     color: #6E845F;
     font-size: 6.2vw;
