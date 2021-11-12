@@ -82,7 +82,7 @@
         // HTML email ends here
 
         $from = 'De: ' . $correo . " \r\n"; 
-        $to = "mhere92@gmail.com";
+        $to = "ivoreindumentaria@hotmail.com";
         $subject = "Nuevo mensaje de ". $nombre ." A través de tu sitio web, Ivoré Indumentaria";
 
         if(mail($to,$subject, $mensaje,$header)) {
