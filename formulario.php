@@ -19,10 +19,14 @@
             padding: 0;
             box-sizing: border-box;
         }
+        @font-face {
+            font-family: 'buffalo', sans-serif;
+            src: url(http://fonts.cdnfonts.com/css/buffalo);
+        }
         body {
-            font-size: 16px;
+            font-size: 35px;
             font-weight: 300;
-            color: #888;
+            color: #fafafa;
             background-color:rgba(230, 225, 225, 0.5);
             line-height: 30px;
             text-align: center;
@@ -34,7 +38,7 @@
             margin: 0 auto;
             padding: 40px;
             background: #6E845F;
-            border-top: 3px solid #E64A19;
+            border-top: 3px solid #9abbad;
         }
         .bold{
             color:#fafafa;
@@ -47,23 +51,26 @@
             display: block;
             padding:0px 0px 20px 0px;
         }
+
+        .titulo{
+            font-family: buffalo;
+        }    
         </style>
     </head>".
         "<body>" .
             "<div class='contenedor'>".
                 "<p>&nbsp;</p>" .
                 "<p>&nbsp;</p>" .
-                    "<span>Lucia, recibiste un e-mail de <strong class='bold'>" . $nombre . " . . .!</strong></span>" .
+                    "<span class='titulo'><strong class='bold'>Lucía, recibiste un e-mail de " . $nombre . " !!</strong></span>" .
                     "<p>&nbsp;</p>" .
-                     "<p>Telefono: <strong class='bold'>" . $telefono . "</strong></p>" .
+                     "<p><strong class='bold'>Teléfono: " . $telefono . "</strong></p>" .
                     "<p>&nbsp;</p>" .
-                     "<p>Email: <strong class='bold'>" . $correo . "</strong></p>" .
+                     "<p><strong class='bold'>Email: " . $correo . "</strong></p>" .
                     "<p>&nbsp;</p>" .
-                    "<p>Mensaje: <strong class='bold'>" . $mensajex . "</strong> </p>" .
+                    "<p><strong class='bold'>Mensaje: " . $mensajex . "</strong> </p>" .
                     "<p>&nbsp;</p>" .
-            "<p>¡Gracias por suscribirse a mi Canal </p>" .
             "<p>&nbsp;</p>" .
-            "<p><span class='bold'> Wed Developer! </span></p>" .
+            "<p><span class='bold'>Desde Ivoré Web</span></p>" .
             "<p>&nbsp;</p>" .
             "<p>".
                 "<a title='Ivore Web'>". 
@@ -75,8 +82,8 @@
         // HTML email ends here
 
         $from = 'De: ' . $correo . " \r\n"; 
-        $to = "ivoreindumentaria@hotmail.com";
-        $subject = "Nuevo mensaje de ". $nombre ." A traves de tu sitio ivore";
+        $to = "mhere92@gmail.com";
+        $subject = "Nuevo mensaje de ". $nombre ." A través de tu sitio web, Ivoré Indumentaria";
 
         if(mail($to,$subject, $mensaje,$header)) {
             echo 1;
