@@ -301,7 +301,7 @@ html {
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: auto;
+  height: fit-content;
 }
 
 .sobreIvore .cuerpo .imgtxt img {
